@@ -26,7 +26,33 @@ from django.db.models import Value, DateField
 @api_view(['GET'])
 def index(request):
     url_pattern ={
-        "index":''
+
+        'Index':'',
+        'Register':'/register/',
+        'Login':'/login/',
+        'Admin Profile':'profile-admin/id',
+        'View Seller':'view-seller',
+        'Verify Seller':'verify-seller/id',
+        'Delete Seller':'delete-seller/id',
+        'View Buyer':'view-buyer',
+        'Verify Buyer':'verify-buyer/id',
+        'Delete Buyer':'delete-buyer/id',
+        'Add Product':'add-product',
+        'View Product':'view-product',
+        'Edit Product':'edit-product/id',
+        'Delete Product ':'delete-product/id',
+        'Seller Profile':'profile-seller/id',
+        'Update Buyer Product Status':'update-status/id',
+        'All Product':'all-product',
+        'View One Product In Detail':'detail-product/id',
+        'Add To Cart':'add-to-cart/id',
+        'MyCart':'my-cart',
+        'Edit Cart':'edit-cart/id',
+        'Delete Cart':'delete-cart/id',
+        'Checkout Product ':'checkout',
+        'View My Buys':'my-buy',
+        'Cancel Order ':'cancel-order/id',
+        
     }
     return Response(url_pattern)
 
